@@ -18,7 +18,11 @@ body{
 .login-container {
   height: 500px;
   width: 350px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgba(176, 176, 176, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -70,11 +74,71 @@ body{
 
 .nav-item-container:hover {
   font-weight: 600;
-  background-color: rgba(176, 176, 176, 0.8);
+  background-color: rgba(176, 176, 176, 0.2);
 }
 
 .nav-item-container:active {
   background-color: rgba(176, 176, 176, 0.5);
 
 }
+
+.login-container h2{
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 75px;
+
+}
+
+.login-container .input-box {
+  margin-bottom: 30px;
+  border: 1px solid rgba(176, 176, 176, 0.8);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 245px;
+  background: transparent;
+  color: rgba(238, 222, 222, 0.8);
+}
+
+.login-container .input-box:hover {
+  opacity: 0.8;
+}
+
+.login-container .input-box:focus {
+  outline: none;
+}
+
+.login-container .input-box:active {
+  opacity: 0.5;
+}
+
+.login-button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  background-color: rgb(179, 177, 94);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+.login-button:active {
+  opacity: 0.5;
+}
+
+.login {
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-top: 2px;
+  color: black;
+  font-size: 16px;
+}
+
+
 
